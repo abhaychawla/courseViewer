@@ -26,11 +26,11 @@
                 })
                 .state('course.modules', {
                     url: '/modules',
-                    template: '<course-modules></course-modules>'
+                    template: '<course-modules course="vm.course"></course-modules>'
                 })
                 .state('course.description', {
                     url: '/description',
-                    template: '<course-description></course-description>'
+                    template: '<course-description course="vm.course"></course-description>'
                 })
                 .state('course.discussion', {
                     url: '/discussion',
@@ -52,11 +52,11 @@
                 })
                 .state('author.courses', {
                     url: '/courses',
-                    template: '<author-courses></author-courses>'
+                    template: '<author-courses author="vm.author"></author-courses>'
                 })
                 .state('author.bio', {
                     url: '/bio',
-                    template: '<author-bio></author-bio>'
+                    template: '<author-bio author="vm.author"></author-bio>'
                 });
 
             $urlRouterProvider.otherwise('/');

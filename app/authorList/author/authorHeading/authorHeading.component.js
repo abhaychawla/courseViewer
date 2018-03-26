@@ -3,13 +3,13 @@
 
     angular
         .module('courseViewer')
-        .component('authorCourses', {
+        .component('authorHeading', {
             bindings: {
                 author: '<'
             },
-            templateUrl: 'authorList/author/authorCourses/authorCourses.html',
+            templateUrl: 'authorList/author/authorHeading/authorHeading.html',
             controllerAs: 'vm',
-            controller: 'AuthorCoursesController'
-        })
+            controller: 'AuthorHeadingController'
+        });
 
 })();

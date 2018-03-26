@@ -1,1 +1,17 @@
-<span>COURSE MODULES</span>
+<h4>COURSE MODULES</h4>
+<div class="row">
+    <div class="col-md-4">
+        MODULE NAME
+    </div>
+    <div class="col-offset-md-1 col-md-2">
+        DURATION
+    </div>
+</div>
+<div class="row" ng-repeat="module in vm.course.Modules">
+    <div class="col-md-4">
+        {{ module.Title }}
+    </div>
+    <div class="col-offset-md-1 col-md-2">
+        {{ module.Minutes | timeFormat:module.Seconds }}
+    </div>
+</div>

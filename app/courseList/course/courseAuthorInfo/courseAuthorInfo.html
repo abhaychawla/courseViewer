@@ -1,3 +1,20 @@
-<h3>AUTHOR</h3>
+<h3>COURSE AUTHOR</h3>
+<br />
+<a ui-sref="author({ authorId: vm.author.AuthorId })">
+    {{ vm.author.FirstName }} {{ vm.author.LastName }}
+</a>
+<br />
+<div>
+    {{ vm.author.Bio.substr(0, 150) }}...
+</div>
 <hr />
-<span>AUTHOR NAME</span>
+<h3>COURSE INFO</h3>
+<br />
+<div>
+    <span>Duration: </span>
+    <span>{{ vm.courseTime }}</span>
+</div>
+<div>
+    <span>Released: </span>
+    <span>{{ vm.courseReleased }}</span>
+</div>

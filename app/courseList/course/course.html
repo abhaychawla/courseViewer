@@ -1,8 +1,7 @@
 <div>
     <div class="row">
         <div class="col-md-9">
-            <span>Course: {{ vm.courseId }}</span>
-            <course-heading></course-heading>
+            <course-heading course="vm.course"></course-heading>
             <hr />
             <course-navigator></course-navigator>
             <br />
@@ -11,7 +10,7 @@
         <div class="col-md-3">
             <br />
             <br />
-            <course-author-info></course-author-info>
+            <course-author-info author="vm.course.Author"></course-author-info>
         </div>
     </div>
 </div>
