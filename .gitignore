@@ -1,0 +1,5 @@
+# Package Manager Files
+node_modules/
+
+# Configuration Files
+.env

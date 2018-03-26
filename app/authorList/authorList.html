@@ -1,0 +1,14 @@
+<div>
+    <h3>AUTHOR LIST</h3>
+    <hr />
+    <div ng-hide='vm.authorList'>
+        NO AUTHORS
+    </div>
+    <div ng-show='vm.authorList'>
+        <div class="row" ng-repeat="author in vm.authorList">
+            <a ui-sref='author({ authorId: author.AuthorId })'>
+                {{ author.FirstName }} {{ author.LastName }}
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div>
+    <h3>COURSE LIST</h3>
+    <hr />
+    <div ng-hide='vm.courseList'>
+        NO COURSES
+    </div>
+    <div ng-show='vm.courseList'>
+        <div class="row">
+            <div class="col-md-7">
+                COURSE NAME
+            </div>
+            <div class="col-md-offset-2 col-md-3">
+                AUTHOR NAME
+            </div>
+        </div>
+        <div class="row" ng-repeat='course in vm.courseList'>
+            <div class="col-md-7">
+                <a ui-sref='course({ courseId: course.CourseId })'>
+                    {{ course.CourseName }}
+                </a>
+            </div>
+            <div class="col-offset-md-1 col-md-3">
+                {{ course.Author.FirstName }} {{ course.Author.LastName }}
+            </div>
+        </div>
+    </div>
+</div>
