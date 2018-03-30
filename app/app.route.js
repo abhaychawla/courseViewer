@@ -32,10 +32,6 @@
                     url: '/description',
                     template: '<course-description course="vm.course"></course-description>'
                 })
-                .state('course.discussion', {
-                    url: '/discussion',
-                    template: '<course-discussion></course-discussion>'
-                })
                 .state('authors', {
                     url: '/authors',
                     template: '<author-list></author-list>'
